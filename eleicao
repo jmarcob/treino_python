@@ -1,0 +1,31 @@
+#programa recebe o número de eleitores e diz quem ganhou a eleição a partir dos candidatos
+eleitores=[]
+while True:
+    n = (input("insira o nome do eleitor:"))
+    if n == "pare":
+        print("você encerrou o conjunto")
+        break
+    else:
+        eleitores.append(n)
+        pass
+print (eleitores)
+pop = len(eleitores)
+print(pop)
+
+candidatos=[]
+while True:
+    cand = (input("insira o nome do seu candidato:"))
+    if cand == "pare":
+        print("você encerrou o conjunto")
+        break
+    elif cand != "lula" and cand!= "bolso" and cand != "ciro":
+        print("candidato inválido")
+        pass
+    else:
+        candidatos.append((cand))
+        if len(candidatos) > len(eleitores):
+            print("excedido o número de candidatos")
+        else:
+            pass
+        pass
+print("o candidato com maior votos foi: ",max(candidatos))
