@@ -1,0 +1,53 @@
+#alerta de login=senha
+while True:
+    login = input("LOGIN: ")
+    senha = input("SENHA: ")
+    if senha != login:
+        print("ENTRADA LIBERADA")
+        break
+    else:
+        print("SENHA NÃO PODE SER IGUAL LOGIN")
+        
+        
+ =-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#informações de cadastro
+while True:
+    nome = input("coloca o nome: ")
+    if len(nome) < 3:
+        print("inválido")
+        break
+    else:
+        pass
+
+    idade = eval(input("coloque a idade: "))
+    if idade < 0 and idade > 150:
+        print("inválido")
+        break
+    else:
+        pass
+    salario = eval(input("coloque seu salário: "))
+    if salario < 3:
+        print("inválido")
+        break
+    else:
+        pass
+    sexo = input("sexo M ou F?")
+    if sexo != "M" and sexo != "F":
+        print("inválido")
+        break
+    else:
+        pass
+    estado = input("estado civil (C, S, V ou D)")
+    if  estado != "C" and estado != "S" and estado != "V" and estado != "D" :
+        print("inválido")
+        break
+    else:
+        pass
+
+        print("nome: ",nome)
+        print("idade: ", idade)
+        print("salario: ", salario)
+        print("sexo: ",sexo)
+        print("estado civil: ", estado)
+
+        break
