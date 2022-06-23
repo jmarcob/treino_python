@@ -1,0 +1,15 @@
+#programa de mensagem
+
+while True:
+    x = input("que turno você estuda? Matutino(M), Vespertino(V) ou Noturno(N) ")
+    if x == "M":
+        print("Bom dia!")
+        break
+    elif x == "V":
+        print ("Boa Tarde!")
+        break
+    elif x == "N":
+        print("Boa Noite!")
+        break
+    else:
+        print("Resposta Incorreta,insira Matutino(M), Vespertino(V) ou Noturno(N)")
