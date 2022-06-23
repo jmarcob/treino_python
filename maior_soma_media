@@ -1,0 +1,14 @@
+#programa que lê 5 numeros e indica o maior, soma e média
+import numpy as np
+a= eval(input("diga um número: "))
+b= eval(input("diga um número: "))
+c= eval(input("diga um número: "))
+d= eval(input("diga um número: "))
+e= eval(input("diga um número: "))
+lista = (list([a,b,c,d,e]))
+maximo = max(lista)
+media = np.mean(lista)
+soma = sum(lista)
+print("o maior número é:", maximo)
+print("a média dos números é", media)
+print("a soma dos números é", soma)
