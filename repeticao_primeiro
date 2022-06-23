@@ -1,0 +1,8 @@
+#primeiro ex de repetição
+while True:
+    x = eval(input("insira uma nota entre 0 e 10"))
+    if x >=1 and x<=10:
+        print("o número é:", x)
+        break
+    else:
+        print("número não aceito")
