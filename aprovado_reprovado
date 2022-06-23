@@ -1,0 +1,11 @@
+#programa para conferir se o aluno está aprovado ou reprovado
+import statistics as st
+nota1 = eval(input("coloque a primeira nota:"))
+nota2 = eval(input("coloque a segunda nota:"))
+media = st.mean([nota1, nota2])
+if media >=7 and media < 10:
+    print("Aprovado")
+elif media == 10:
+    print("Aprovado com DISTINÇÃO")
+else:
+    print("Reprovado")
