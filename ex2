@@ -1,0 +1,11 @@
+#programa para converter metro para centímetros
+import numpy as np
+m1 = eval(input("diga a primeira nota"))
+m2 = eval(input("diga a segunda nota"))
+m3 = eval(input("diga a terceira nota"))
+m4 = eval(input("diga a quarta nota"))
+media_array = np.array([m1,m2,m3,m4])
+
+media_geral = float(np.mean(media_array))
+
+print("sua média final ficou:", media_geral)
