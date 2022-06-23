@@ -1,0 +1,19 @@
+#informando quantos algarismos tem no número inserido
+def tamanho(n):
+    return len(str(n))
+
+
+n = input("diga um valor que diremos quantos algarismos tem: ")
+print("o tamanho de n é: ",tamanho(n))
+
+=-=-=-=-=-=-=-=-===-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#printando o numero na sua ordem inversa
+def inverso(n):
+    return str(n[::-1])
+
+
+n = input("diga um valor que printaremos a ordem inversa: ")
+print("o inverso é: ",inverso(n))
+
+=-=-=-=---=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
