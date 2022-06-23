@@ -1,0 +1,48 @@
+#fruteira
+while True:
+    fruta = input("qual fruta você quer comprar?")
+    valormo5=2.5
+    valormomais=2.2
+    valorma5=1.8
+    valormamais=1.5
+    totalma = 0
+    totalmo = 0
+    pesoma = 0
+    pesomo = 0
+    if fruta == "morango":
+        pesomo = eval(input("quantos kg de morango quer?"))
+        if pesomo < 5:
+            totalmo = valormo5*pesomo
+        else:
+            totalmo = valormomais*pesomo
+    elif fruta == "maçã":
+        pesoma = eval(input("quantos kg de maçã quer?"))
+        if pesoma < 5:
+            totalma = valorma5 * pesoma
+        else:
+            totalma = valormamais * pesoma
+    elif fruta == "ambos":
+        pesomo = eval(input("quantos kg de morango quer?"))
+        if pesomo < 5:
+            totalmo = valormo5 * pesomo
+        else:
+            totalmo = valormomais * pesomo
+
+        pesoma = eval(input("quantos kg de maçã quer?"))
+        if pesoma < 5:
+            totalma = valorma5 * pesoma
+        else:
+            totalma = valormamais * pesoma
+    else:
+        print("fruta não aceita")
+        continue
+    if totalma+totalmo >= 25:
+        valorfinal = (totalma+totalmo)*0.9
+        print("O valor final será R$",valorfinal)
+    elif pesoma + pesomo >= 8:
+        valorfinal = (totalma + totalmo) * 0.9
+        print("O valor final será R$", valorfinal)
+    else:
+        valorfinal = totalma+totalmo
+        print("O valor final será R$", valorfinal)
+    break
