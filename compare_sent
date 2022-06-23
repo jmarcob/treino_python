@@ -1,0 +1,16 @@
+def compare(x,y):
+    if len (x)==len(y):
+        print("as frases estão corretas")
+    else:
+        print("frases incorretas, tente de novo")
+
+
+
+
+print("FRASES DE SEGURANÇA")
+print("-----"*10)
+while True:
+    a = input("insira uma frase qualquer: ")
+    b = input("insira a mesma frase: ")
+    print(compare(a,b))
+    print("=-="*10)
