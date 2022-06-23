@@ -6,3 +6,19 @@ while count<=n:
     res *= count
     count += 1
 print (res)
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#fatorial apenas para números positivos, inteiros e menores que 16
+while True:
+    n = int(input("fatorial de:"))
+    if n>16 or n<0:
+        print("valor invalido, tente de novo")
+    else:
+        res = 1
+        count = 1
+        while count<=n:
+            res *= count
+            count += 1
+        print (res)
