@@ -1,0 +1,8 @@
+def somaimposto(taxaimposto, custo):
+    somaimposto = custo + ((taxaimposto/100)*custo)
+    print(f'o valor do custo será {somaimposto}')
+
+
+custo =  eval(input("qual o custo inicial? "))
+taxaimposto = eval(input("qual a taxa de imposto sobre a venda?" ))
+print (somaimposto(taxaimposto, custo))
