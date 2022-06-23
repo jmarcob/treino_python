@@ -1,0 +1,14 @@
+#informe o sexo
+while True:
+    sexo = input("diga se é masculino(M), feminino(F) ou outro(O): ")
+    if sexo == "M":
+        print("sexo é Masculino")
+        break
+    elif sexo == "F":
+        print ("sexo é Feminino")
+        break
+    elif sexo == "O":
+        print("é outra opção")
+        break
+    else:
+        print("Nenhuma opção aceita. Tente M, F ou O")
