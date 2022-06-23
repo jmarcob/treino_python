@@ -1,0 +1,8 @@
+#fatorial
+n = int(input("fatorial de:"))
+res = 1
+count = 1
+while count<=n:
+    res *= count
+    count += 1
+print (res)
