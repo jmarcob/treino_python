@@ -1,0 +1,8 @@
+#programa para loja de tintas
+tamanho = eval(input("qual a area de pintura em metros quadrados?"))
+qtd_tinta = 3*tamanho
+
+qtd_latas = int(qtd_tinta/18)+1
+valor = 80*qtd_latas
+
+print("você precisará comprar",qtd_latas,"latas com o valor total de R$",valor)
