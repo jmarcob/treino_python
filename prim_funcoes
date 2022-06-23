@@ -1,0 +1,20 @@
+#recebe 3 valores aleatórios e faz a soma 
+def soma(a,b,c):
+    soma = a+b+c
+    print(f'a operação {a}+{b}+{c} é {soma}')
+
+
+soma(1,2,3)  #exemplo
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+def sinal(a):
+    if a>0:
+        print(f'o valor {a} é positivo')
+    else:
+        print(f'o valor {a} é negativo ou zero')
+
+
+
+a = eval(input("diga um valor que indicaremos se é positivo ou negativo "))
+print (sinal(a))
