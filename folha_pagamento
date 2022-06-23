@@ -1,0 +1,46 @@
+#programa para calcular folha de pagamento
+sal_hora = eval(input("diga seu salário por hora conforme contrato"))
+hora_trab_mes = eval(input("diga a quantidade de horas trabalhadas na mês"))
+sal = sal_hora*hora_trab_mes
+print("seu salario mensal bruto será de",sal,"reais")
+if sal <= 900:
+    print("ISENTO DO IR")
+    inss1 = float(sal*0.1)
+    print("(-)INSS (10%): R$",inss1)
+    fgts1 = float(sal*0.11)
+    print("FGTS (11%): R$", fgts1)
+    total_desc = inss1 + fgts1
+    sal_liq =sal - total_desc
+    print("salário líquido : R$", sal_liq)
+
+elif sal > 900 and sal <= 1500:
+    ir2 = float(sal * 0.05)
+    print("(-) IR (5%): R$", ir2)
+    inss2 = float(sal*0.1)
+    print("(-)INSS (10%): R$",inss2)
+    fgts2 = float(sal*0.11)
+    print("FGTS (11%): R$", fgts2)
+    total_desc = ir2 + inss2 + fgts2
+    sal_liq =sal - total_desc
+    print("salário líquido : R$", sal_liq)
+
+elif sal>1500 and sal<=2500:
+    ir3 = float(sal * 0.1)
+    print("(-) IR (10%): R$", ir3)
+    inss3 = float(sal * 0.1)
+    print("(-)INSS (10%): R$", inss3)
+    fgts3 = float(sal * 0.11)
+    print("FGTS (11%): R$", fgts3)
+    total_desc = ir3 + inss3 + fgts3
+    sal_liq = sal - total_desc
+    print("salário líquido : R$", sal_liq)
+else:
+    ir4 = float(sal * 0.2)
+    print("(-) IR (20%): R$", ir4)
+    inss4 = float(sal * 0.1)
+    print("(-)INSS (10%): R$", inss4)
+    fgts4 = float(sal * 0.11)
+    print("FGTS (11%): R$", fgts4)
+    total_desc = ir4 + inss4 + fgts4
+    sal_liq = sal - total_desc
+    print("salário líquido : R$", sal_liq)
