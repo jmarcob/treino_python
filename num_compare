@@ -1,0 +1,10 @@
+#programa para conferir qual o maior e o menor dos número digitados
+import numpy as np
+n1 = eval(input("digite um numero aleatorio"))
+n2 = eval(input("digite um numero aleatorio"))
+n3 = eval(input("digite um numero aleatorio"))
+array = ([n1, n2, n3])
+maior = np.amax(array)
+menor = np.amin(array)
+print ("o maior dos numeros digitados é",maior)
+print ("o menor dos numeros digitados é",menor)
