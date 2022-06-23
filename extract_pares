@@ -1,0 +1,15 @@
+#extraindo e contando valores pares de lista
+lista=[]
+while int(len(lista))<=9:
+    x = eval(input("insira um número"))
+    lista.append(x)
+print(lista)
+lista2 = []
+for y in lista:
+    if y%2==0:
+        lista2.append(y)
+
+    else:
+        pass
+print("números pares são: ", lista2)
+print("números pares são: ",len(lista2))
