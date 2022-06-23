@@ -1,0 +1,25 @@
+#imprimir centena, dezena e unidade de número
+x = eval(input("coloque um número menor que mil"))
+c = int(x/100)
+d = int((x/10) - 10*c)
+u = x - ((c*100)+(d*10))
+print("x tem",c,"centenas",d,"dezenas e ",u,"unidades")
+
+
+   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#x é par ou ímpar?
+x = int(eval(input("coloque um número inteiro qualquer ")))
+if x%2 == 0:
+    print("x é par")
+else:
+    print("x é impar")
+    
+    
+    
+    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#x é inteiro ou decimal?
+x= eval(input("diga um valor de x"))
+if x == int(x):
+    print("é inteiro")
+else:
+    print("é decimal")
