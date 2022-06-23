@@ -1,0 +1,27 @@
+#posto de gasolina
+while True:
+    gas = input("qual combustível você quer colocar?")
+    A = 0
+    G = 0
+    valorA = 1.90
+    valorG = 2.50
+    if gas == "álcool":
+        A = eval(input("Quantos litros de álcool pretende botar?"))
+        if A<20:
+            totalA = valorA*0.97*A
+            print("o valor total de alcool abastecido foi de: R$",totalA)
+        else:
+            totalA = valorA*0.95*A
+            print("o valor total de alcool abastecido foi de: R$", totalA)
+        break
+    elif gas == "gasolina":
+        G = eval(input("Quantos litros de Gasolina pretende botar?"))
+        if G<20:
+            totalG = valorG*0.94*G
+            print("o valor total de gasolina abastecido foi de: R$", totalG)
+        else:
+            totalG = valorG*0.94*G
+            print("o valor total de gasolina abastecido foi de: R$", totalG)
+        break
+    else:
+        print("combustível não aceito, por favor escolher somente entre álcool e gasolina")
