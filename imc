@@ -1,0 +1,10 @@
+#programa para calcular o IMC
+peso= eval(input("coloque o valor do seu peso"))
+altura = eval(input("coloque a sua altura"))
+
+imc = (peso)/((altura)**2)
+
+if imc<=25:
+    print ("seu imc é", imc,"e você está com imc saudável")
+else:
+    print("procure um profissional para abaixar o seu imc que é",imc,"e está acima de 25")
