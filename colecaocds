@@ -1,0 +1,22 @@
+#programa recebe o número de cds em uma coleção, o valor de cada CD e dps imprime o valor da coleção
+n = eval((input("insira numero de cds ")))
+colecao=[]
+for x in range(1,n+1):
+    colecao.append(n)
+    n = n-1
+print(sorted(colecao))
+valor=[]
+while True:
+    price=eval(input("coloque o valor do respectivo cd"))
+    valor.append((price))
+    if len(valor)>=len(colecao):
+        break
+    else:
+        pass
+
+for y in sorted(colecao):
+    print("CD",y,"=",valor[sorted(colecao).index(y)], "reais")
+
+#valor total gasto na coleção
+total = sum(valor)
+print("o valor total gasto foi ",total)
