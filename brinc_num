@@ -1,0 +1,26 @@
+#programa que printa os ímpares de 1 a 50
+for impares in range(1,50,2):
+    print(impares, end=',')
+ 
+ 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#programa que printa os inteiros entre 2 números quaisquer
+a=eval(input("insira um número inteiro qualquer: "))
+b=eval(input("insira um número qualquer maior que a: "))
+if a<b:
+    for numeros in range(a,b+1):
+        print(numeros)
+else:
+    print("VALORES INVÁLIDOS")
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+#Potência de qualquer número sem usar a operação **
+import numpy as np
+b = eval(input("qual o valor da base?"))
+e = eval(input("qual o valor do expoente?"))
+lista=[]
+while int(len(lista))<=(e-1):
+    lista.append(b)
+potencia = np.prod(lista)
+print("a potência é:", potencia)
