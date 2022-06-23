@@ -1,0 +1,20 @@
+#questionamentos sobre crime
+print("Responda as seguintes questões apenas com sim ou não")
+
+a = input("Telefonou para a vítima? ")
+b = input("Esteve no local do crime? ")
+c = input("Mora perto da vítima? ")
+d = input("Devia para a vítima? ")
+e = input("Já trabalhou para a vítima? ")
+
+respostas = [a,b,c,d,e]
+sims = respostas.count("sim")
+
+if sims == 0:
+    print("A pessoa é INOCENTE")
+elif sims ==3 and sims== 4:
+    print("A pessoa é CÚMPLICE")
+elif sims == 2:
+    print("A pessoa é SUSPEITA")
+else:
+    print("A pessoa é o ASSASSINO")
