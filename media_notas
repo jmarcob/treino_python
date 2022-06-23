@@ -1,0 +1,16 @@
+#programa recebe um conjunto de notas e calcula a média
+import numpy as np
+lista=[]
+while True:
+    n = (input("insira uma nota:"))
+    if n == "pare":
+        print("você encerrou o conjunto de notas")
+        break
+    elif int(n)>10 or int(n)<0:
+        print("valor inválido, tente novamente")
+        pass
+    else:
+        lista.append(int(n))
+        pass
+print (lista)
+print("a média das notas é:", np.mean(lista))
