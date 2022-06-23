@@ -1,0 +1,12 @@
+#programa que avisa que o ano é bissexto
+ano = eval(input("qual o ano?  "))
+if (ano % 100 == 0):
+    if (ano%400 == 0):
+        print("é bissexto")
+    else:
+        print("não é bissexto")
+else:
+    if ano%4==0:
+        print ("é ano bissexto")
+    else:
+        print("não é bissexto")
