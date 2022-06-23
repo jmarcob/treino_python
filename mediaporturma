@@ -1,0 +1,23 @@
+#programa recebe o número de turmas, número de alunos por turma e média de alunos por turma
+n = eval((input("insira numero de turmas ")))
+turma=[]
+for x in range(1,n+1):
+    turma.append(n)
+    n = n-1
+print(sorted(turma))
+alunos=[]
+while True:
+    std=eval(input("coloque a quantidade de alunos"))
+    if std>40:
+        print("apenas valores menor que 40")
+    else:
+        alunos.append((std))
+        if len(alunos)>=len(turma):
+            break
+        else:
+            pass
+
+for y in sorted(turma):
+    print("turma",y,"=",alunos[sorted(turma).index(y)], "alunos")
+media = sum(alunos) / len(turma)
+print("a média de alunos por turma é de ",media)
