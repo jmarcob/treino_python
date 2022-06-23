@@ -1,0 +1,28 @@
+#aumento populacional
+A = 80000
+B = 200000
+taxaA = 0.03
+taxaB = 0.015
+ano=0
+while A<=B:
+    ano += 1
+    A += A * taxaA
+    B += B * taxaB
+
+print("foram", ano, "anos")
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+#aumento populacional com taxa qualquer
+A = 80000
+B = 200000
+taxaA = eval(input("informe a taxa de crescimento de A"))
+taxaB = eval(input("informe a taxa de crescimento de B"))
+ano=0
+while A<=B:
+    ano += 1
+    A += A * taxaA
+    B += B * taxaB
+
+print("foram", ano, "anos")
