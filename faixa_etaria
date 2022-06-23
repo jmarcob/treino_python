@@ -1,0 +1,19 @@
+#programa recebe um conjunto de  N idade e printa a faixa etária de acoro com um intervalo de idades
+import numpy as np
+lista=[]
+while True:
+    n = (input("insira a sua idade:"))
+    if n == "pare":
+        print("você encerrou o conjunto")
+        break
+    else:
+        lista.append(int(n))
+        pass
+
+print("a média das idades é:", np.mean(lista))
+if np.mean(lista) <=25:
+    print("jovem")
+elif np.mean(lista) > 25 and np.mean(lista) <=60:
+    print("adulto")
+else:
+    print("idoso")
