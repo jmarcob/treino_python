@@ -1,0 +1,6 @@
+#PROGRAMA PARA CALCULAR ÁREA DO CIRCULO
+import math
+r = eval(input("diga o valor do raio em centímetros"))
+area_circulo = math.pi*(r)**2
+
+print("a área do circulo é", area_circulo,"centímetros quadrados")
