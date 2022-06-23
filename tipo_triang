@@ -1,0 +1,12 @@
+#estas retas podem formar um triângulo?
+a1 = eval(input("insira a medida da primeira reta: "))
+a2 = eval(input("insira a medida da segunda reta: "))
+a3 = eval(input("insira a medida da terceira reta: "))
+if a1+a2<a3:
+    print("não pode formar um triângulo")
+elif a1==a2 and a2==a3:
+    print("triangulo equilátero")
+elif a1==a2 and a2!=a3:
+    print("triangulo isósceles")
+else:
+    print("triangulo escaleno")
