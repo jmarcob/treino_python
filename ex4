@@ -1,0 +1,7 @@
+#calcular área e mostrar o dobro da área
+a = eval(input("diga o lado do quadrado em centimetros"))
+area = a**2
+
+dobro_area = 2*area
+
+print("o dobro da área é", dobro_area,"centimetros quadrados")
