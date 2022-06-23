@@ -1,0 +1,15 @@
+#calcular o valor do salário liquido e os impostos do salario
+sal_hora = eval(input("diga seu salário por hora conforme contrato"))
+hora_trab_mes = eval(input("diga a quantidade de horas trabalhadas na mês"))
+salario = sal_hora*hora_trab_mes
+print("seu salario mensal bruto será de",salario,"reais")
+
+imposto = salario*0.11
+print("você paga R$",imposto,"de imposto de renda")
+inss = salario*0.08
+print("você paga R$",inss,"de inss")
+sindicato = salario*0.05
+print("você paga R$",sindicato,"ao sindicato")
+salario_liquido = salario - imposto - inss - sindicato
+
+print("o seu salário liquido é: R$", salario_liquido)
