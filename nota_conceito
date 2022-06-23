@@ -1,0 +1,19 @@
+#programa para calcular nota e conceito final de aluno
+n1 = eval(input("insira a primeira nota parcial: "))
+n2 = eval(input("insista a segunda nota parcial: "))
+media = (n1+n2)/2
+print("a primera nota é ", n1," a segunda nota é ",n2," sua media final é ", media)
+if media >= 9 and media <= 10:
+    print("seu conceito é A")
+elif media >=7 and media < 9:
+    print("seu conceito é B")
+elif media >=6 and media < 7.5:
+    print("seu conceito é C")
+elif media >=4 and media < 6:
+    print("seu conceito é D")
+else:
+    print("seu conceito é D")
+if media < 4:
+    print( "e você está reprovado" )
+else:
+    print("parabéns, está aprovado!")
