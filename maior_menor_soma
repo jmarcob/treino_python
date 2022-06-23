@@ -1,0 +1,14 @@
+#programa recebe um conjunto de  N valores e determina o maior, menor e a soma
+lista=[]
+while True:
+    n = (input("insira um valor qualquer:"))
+    if n == "pare":
+        print("você encerrou o conjunto")
+        break
+    else:
+        lista.append(int(n))
+        pass
+print (lista)
+print("o menor valor do conjunto é:", min(lista))
+print("o maior valor do conjunto é:", max(lista))
+print("a soma dos valores do conjunto é:", sum(lista))
