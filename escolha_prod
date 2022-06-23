@@ -1,0 +1,18 @@
+#programa para conferir qual produto devo comprar (escolhendo o de menor preço)
+import numpy as np
+price1 = eval(input("digite o preço do produto 1 "))
+prod1 = input("digite nome do produto 1 ")
+price2 = eval(input("digite o preço do produto 2 "))
+prod2 = input("digite nome do produto 2 ")
+price3 = eval(input("digite o preço do produto 3 "))
+prod3 = input("digite nome do produto 3 ")
+lista = ([price1, price2, price3])
+listaprod = ([prod1, prod2, prod3])
+
+menor = np.amin(lista)
+pos_menor = lista.index(menor)
+lista == listaprod
+x = listaprod[pos_menor]
+
+
+print("o produto que vc tem que comprar é ",x)
