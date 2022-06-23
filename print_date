@@ -1,0 +1,10 @@
+#programa que avalia se formato da data está correto
+dia = eval(input("insira o dia no formato DD"))
+mes = eval(input("insira o mês no formato MM"))
+ano = eval(input("insira o ano no formato AAAA"))
+if dia > 31:
+    print("data inválida dia maior que 31")
+elif mes > 12:
+    print("data inválida mês maior que 12")
+else:
+    print("a data impressa é",dia,"/",mes,"/",ano)
