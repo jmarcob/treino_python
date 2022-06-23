@@ -1,0 +1,6 @@
+#programa para converter metro para centímetros
+
+m = eval(input("diga o valor em metros:"))
+cm = m * 100
+
+print (m,"metros são",cm,"centímetros")
