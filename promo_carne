@@ -1,0 +1,89 @@
+#promoção de carne no mercado tabajara
+while True:
+    carne = input("qual carne você deseja comprar (Filé, Alcatra ou Picanha)?")
+    valorfi5=4.9
+    valorA5=5.9
+    valorpi5=6.9
+    valorfi=5.8
+    valorA=6.8
+    valorPi=7.8
+    if carne == "Filé":
+        pesofi = eval(input("Qual o peso de filé que deseja?"))
+        if pesofi < 5:
+            totalfi = valorfi5*pesofi
+            print("Valor Filé R$",totalfi)
+        else:
+            totalfi = valorfi*pesofi
+            print("Valor Filé R$", totalfi)
+        pagamento = input("qual o tipo de pagamento?")
+        if pagamento == "cartão":
+            desconto = totalfi*0.05
+            pagtotal = totalfi*0.95
+            print("Carne ", carne)
+            print("Peso:", pesofi, "kg")
+            print("Valor R$", totalfi)
+            print("Tipo de pagamento", pagamento)
+            print("Desconto(-5%) = R$", desconto)
+            print("Valor final R$", pagtotal)
+        else:
+            pagtotal = totalfi
+            print("Carne ", carne)
+            print("Peso:",pesofi,"kg")
+            print("Valor R$",totalfi)
+            print("Tipo de pagamento",pagamento)
+            print("Desconto(-5%)= R$0")
+            print("Valor final R$", pagtotal)
+    elif carne=="Alcatra":
+        pesoA = eval(input("Qual o peso de Alcatra que deseja?"))
+        if pesoA < 5:
+            totalA = valorA5*pesoA
+            print("Valor Alcatra R$", totalA)
+        else:
+            totalA = valorA*pesoA
+            print("Valor Alcatra R$", totalA)
+        pagamento = input("qual o tipo de pagamento?")
+        if pagamento == "cartão":
+            desconto = totalA * 0.05
+            pagtotal = totalA * 0.95
+            print("Carne ", carne)
+            print("Peso:", pesoA, "kg")
+            print("Valor R$", totalA)
+            print("Tipo de pagamento", pagamento)
+            print("Desconto(-5%)= R$", desconto)
+            print("Valor final R$", pagtotal)
+        else:
+            pagtotal = totalA
+            print("Carne ", carne)
+            print("Peso:", pesoA, "kg")
+            print("Valor R$", totalA)
+            print("Tipo de pagamento", pagamento)
+            print("Desconto(-5%)= R$0")
+            print("Valor final R$", pagtotal)
+    elif carne == "Picanha":
+        pesoPi = eval(input("Qual o peso de Picanha que deseja?"))
+        if pesoPi < 5:
+            totalPi = valorPi5*pesoPi
+            print("Valor Picanha R$",totalPi)
+        else:
+            totalPi = valorPi*pesoPi
+            print("Valor Picanha R$",totalPi)
+        pagamento = input("qual o tipo de pagamento?")
+        if pagamento == "cartão":
+            desconto = totalPi * 0.05
+            pagtotal = totalPi * 0.95
+            print("Carne ", carne)
+            print("Peso:", pesoPi, "kg")
+            print("Valor R$", totalPi)
+            print("Tipo de pagamento", pagamento)
+            print("Desconto(-5%)= R$", desconto)
+            print("Valor final R$", pagtotal)
+        else:
+            pagtotal = totalPi
+            print("Carne ", carne)
+            print("Peso:", pesoPi, "kg")
+            print("Valor R$", totalPi)
+            print("Tipo de pagamento", pagamento)
+            print("Desconto(-5%)= R$0")
+            print("Valor final R$", pagtotal)
+    else:
+        print("Carne fora do estoque")
