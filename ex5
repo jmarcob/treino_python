@@ -1,0 +1,5 @@
+#calcular o valor do salário pelo salario/hora
+sal_hora = eval(input("diga seu salário por hora conforme contrato"))
+hora_trab_mes = eval(input("diga a quantidade de horas trabalhadas na mês"))
+salario = sal_hora*hora_trab_mes
+print("seu salario mensal será de",salario,"reais")
